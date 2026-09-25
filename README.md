@@ -27,6 +27,7 @@ The framework analyzes two things:
   propagator, Gaussian packets, and in-obstacle probability. Result: a smooth
   crossover from over-barrier penetration $(E>V_0)$ to tunnelling $(E<V_0)$.
 
+
 ![Dynamics](/paper/figures/fig_dynamics_montage.png)
 
 ![Eigenstates](paper/figures/fig_eigenstates.png)
