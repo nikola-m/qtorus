@@ -3,9 +3,9 @@
 A reproducible framework for a single quantum particle on a
 flat 2-torus (a rectangular cell with doubly periodic boundary conditions)
 containing one **finite-height, penetrable** circular obstacle. Unlike the
-classical hard-wall Sinai billiard (recovered as the limit $V_0 \rightarrow \infty$ `V0 → ∞`), a finite
+classical hard-wall Sinai billiard (recovered as the limit $V_0 \rightarrow \infty$), a finite
 barrier lets the wavefunction **scatter off, penetrate, and tunnel through** the
-obstacle. Barrier height $V_0$`V0` is a single knob that tunes the system between an
+obstacle. Barrier height $V_0$ is a single knob that tunes the system between an
 integrable free torus and a chaotic dispersing billiard, and at the same time
 controls quantum tunnelling.
 
@@ -19,19 +19,19 @@ delivered as open, verified, fully reproducible software.
 The framework analyzes two things:
 
 * **Spectral statistics / quantum chaos** - plane-wave (Fourier) diagonalisation,
-  symmetry desymmetrisation into `C2v` irreducible sectors, unfolding, the
-  nearest-neighbour spacing distribution `P(s)`, number variance `Σ²(L)`,
-  spectral rigidity $\Delta_3 (L)$`Δ₃(L)`, and the Brody parameter. Result: a clean
-  Poisson → GOE transition as `V0` grows.
+  symmetry desymmetrisation into $C2v$ irreducible sectors, unfolding, the
+  nearest-neighbour spacing distribution $P(s)$, number variance $\Sigma^2(L)$,
+  spectral rigidity $\Delta_3 (L)$, and the Brody parameter. Result: a clean
+  Poisson $\rightarrow$ GOE transition as $V_0$ grows.
 * **Wave-packet tunnelling dynamics** - a unitary Strang split-operator (FFT)
   propagator, Gaussian packets, and in-obstacle probability. Result: a smooth
-  crossover from over-barrier penetration (`E > V0`) to tunnelling (`E < V0`).
+  crossover from over-barrier penetration $(E>V_0)$ to tunnelling $(E<V_0)$.
 
 ## Units and model
 
-`ħ = 1`, mass `m = 1/2`, so `H = -∇² + V` and `E = |k|²`.
-Domain `[0,Lx) × [0,Ly)` (periodic). Obstacle of radius `R`, height `V0`,
-centre `r0`, with a sharp top-hat or a smooth (tanh) radial profile.
+$\hbar=1$, mass $m = 1/2$, so $H = -\nabla^2 + V$ and $E = |k|^2$.
+Domain $[0,Lx) \times [0,Ly)$ (periodic). Obstacle of radius $R$, height $V_0$,
+centre $r_0$, with a sharp top-hat or a smooth (tanh) radial profile.
 Sharp-disk Fourier coefficients are analytic (the 2-D Bessel/“disk” transform);
 smooth-disk coefficients come from one FFT. Smooth is the default because a
 discontinuous top-hat converges only algebraically in a plane-wave basis
@@ -147,4 +147,4 @@ shift-invert offers little memory benefit here. The real levers are the four
 
 Advice. Always check convergence: compare two `mmax` values and keep only the levels
 that agree (the demo keeps the lowest ~320 of ~491 converged at `mmax=30`;
-~0.52 × sector dimension is a good rule of thumb).
+$\tilde 0.52 \times$ sector dimension is a good rule of thumb).
