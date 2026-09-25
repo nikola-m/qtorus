@@ -29,7 +29,7 @@ The framework analyzes two things:
 
 ![Dynamics](/paper/figures/fig_dynamics_montage.png)
 
-![Eigenstates]/(paper/figures/fig_eigenstates.png)
+![Eigenstates](paper/figures/fig_eigenstates.png)
 
 
 ## Units and model
