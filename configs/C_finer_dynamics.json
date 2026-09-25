@@ -1,0 +1,31 @@
+{
+  "Lx": 1.0,
+  "Ly": 1.0,
+  "ngrid": 1024,
+  "R": 0.08,
+  "V0": 2600.0,
+  "profile": "smooth",
+  "w": 0.01,
+  "center": [
+    0.5,
+    0.5
+  ],
+  "mmax": 24,
+  "method": "dense",
+  "sector": "A1",
+  "sectors": [
+    "A1"
+  ],
+  "lean": true,
+  "eigenvectors": true,
+  "n_use": 0,
+  "unfold_deg": 12,
+  "unfold_trim": 10,
+  "bands": [],
+  "dt": 2e-05,
+  "nsteps": 10000,
+  "record_every": 200,
+  "fft_workers": 6,
+  "seed": 12345,
+  "label": "C_finer_dynamics"
+}

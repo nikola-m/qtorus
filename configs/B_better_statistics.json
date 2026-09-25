@@ -1,0 +1,43 @@
+{
+  "Lx": 1.0,
+  "Ly": 1.618033988749895,
+  "ngrid": 256,
+  "R": 0.25,
+  "V0": 4000.0,
+  "profile": "smooth",
+  "w": 0.02,
+  "center": [
+    0.0,
+    0.0
+  ],
+  "mmax": 70,
+  "method": "dense",
+  "sector": "A1",
+  "sectors": [
+    "A1",
+    "B1",
+    "B2",
+    "A2"
+  ],
+  "lean": true,
+  "eigenvectors": false,
+  "n_use": 2600,
+  "unfold_deg": 15,
+  "unfold_trim": 20,
+  "bands": [
+    [
+      0.0,
+      4000.0
+    ],
+    [
+      4000.0,
+      9000.0
+    ]
+  ],
+  "dt": 0.0002,
+  "nsteps": 4000,
+  "record_every": 0,
+  "fft_workers": 1,
+  "seed": 12345,
+  "label": "B_better_statistics"
+}
