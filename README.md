@@ -3,7 +3,7 @@
 A reproducible framework for a single quantum particle on a
 flat 2-torus (a rectangular cell with doubly periodic boundary conditions)
 containing one **finite-height, penetrable** circular obstacle. Unlike the
-classical hard-wall Sinai billiard (recovered as the limit `V0 → ∞`), a finite
+classical hard-wall Sinai billiard (recovered as the limit \(V_0 \rightarrow \infty \) `V0 → ∞`), a finite
 barrier lets the wavefunction **scatter off, penetrate, and tunnel through** the
 obstacle. Barrier height `V0` is a single knob that tunes the system between an
 integrable free torus and a chaotic dispersing billiard, and at the same time
