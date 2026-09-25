@@ -142,9 +142,9 @@ shift-invert offers little memory benefit here. The real levers are the four
   levels.
 * **Finer dynamics** (`configs/C_finer_dynamics.json`) - increase `ngrid`
   (FFT cost `O(N² log N)` per step, memory-light) and reduce `dt`; use a threaded
-  FFT backend (`scipy.fft.fft2/ifft2(..., workers=6)`). 1024²–2048² grids with
+  FFT backend (`scipy.fft.fft2/ifft2(..., workers=6)`). $1024^2-2048^2$ grids with
   1e4 steps run in minutes.
 
 Advice. Always check convergence: compare two `mmax` values and keep only the levels
 that agree (the demo keeps the lowest ~320 of ~491 converged at `mmax=30`;
-$\tilde 0.52 \times$ sector dimension is a good rule of thumb).
+~0.52 $\times$ sector dimension is a good rule of thumb).
