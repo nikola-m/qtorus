@@ -83,7 +83,7 @@ python scripts/fig_eigenstates.py     # eigenstate montage + Husimi
 python scripts/run_dynamics.py        # scattering/tunnelling + crossover + gif
 ```
 
-Figures are written to `paper/figures/`, data to `data/`.
+Figures are written to `paper/figures/` (`mkdir` these folders or change the location in the script), and data to `data/`.
 
 ## Tests
 
