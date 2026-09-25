@@ -29,7 +29,7 @@ The framework analyzes two things:
 
 ## Units and model
 
-$\hbar=1$, mass $m = 1/2$, so $H = -\nabla^2 + V$ and $E = |k|^2$.
+$\hbar=1$, mass $m = 1/2$, so $H = -\nabla^2 + V \,$ and $E = |k|^2$.
 Domain $[0,Lx) \times [0,Ly)$ (periodic). Obstacle of radius $R$, height $V_0$,
 centre $r_0$, with a sharp top-hat or a smooth (tanh) radial profile.
 Sharp-disk Fourier coefficients are analytic (the 2-D Bessel/“disk” transform);
@@ -83,13 +83,7 @@ python scripts/fig_eigenstates.py     # eigenstate montage + Husimi
 python scripts/run_dynamics.py        # scattering/tunnelling + crossover + gif
 ```
 
-Figures are written to `paper/figures/`, data and provenance to `data/`.
-
-## Build the paper
-
-```bash
-cd paper && pdflatex main && bibtex main && pdflatex main && pdflatex main
-```
+Figures are written to `paper/figures/`, data to `data/`.
 
 ## Tests
 
