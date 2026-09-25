@@ -27,6 +27,11 @@ The framework analyzes two things:
   propagator, Gaussian packets, and in-obstacle probability. Result: a smooth
   crossover from over-barrier penetration $(E>V_0)$ to tunnelling $(E<V_0)$.
 
+![Dyanmics](paper/figures/fig-dynamics-montage.png)
+
+![Eigenstates](paper/figures/fig-eigenstates.png)
+
+
 ## Units and model
 
 $\hbar=1$, mass $m = 1/2$, so $H = -\nabla^2 + V \,$ and $E = |k|^2$.
